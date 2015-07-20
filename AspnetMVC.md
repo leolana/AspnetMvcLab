@@ -21,3 +21,6 @@ Enquanto o ASP.NET Web Forms acoplava a interface de usuário com o seu code-beh
 #### Testabilidade
 
 Separando a lógica da aplicação a partir da interface do usuário ASP.NET MVC criar uma forma de realizar testes mais facilmente de forma a isolar os componentes individualmente. Classes Controllers podem ser testadas sem testar a sua atual interface do usuário. AO contrário do Web Forms, MVC Controllers não tem dependência direta com a classe HttpContext, cuja qual era o problema ao tentar realizar testes no code-behind do Web Forms.
+
+
+### Based conventions over configurations
