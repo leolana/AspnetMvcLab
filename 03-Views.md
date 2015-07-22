@@ -15,7 +15,7 @@ Como ASP.NET MVC encontra a View correta para renderizar e como você pode subst
 Action da Controller.
 As Actions da Controller você olhou até agora neste capítulo chamado apenas de 
 
-```c#
+```cs
 	return View ();
 ```
 

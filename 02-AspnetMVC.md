@@ -7,8 +7,6 @@ Como uma alternativa para Web Forms, ASP.NET MVC tem uma abordagem diferente qua
 
 ### Benefícios do ASP.NET MVC
 
-Ao fazer uso do padrão MVC, o ASP.NET MVC oferece várias vantagens sobre ASP.NET Web Forms.
-
 #### Mais próximo do protocolo
 
 Enquanto o ASP.NET Web Forms tenta esconder completamente a natureza stateless do HTTP, o ASP.NET MVC NÃO. 
@@ -22,5 +20,25 @@ Enquanto o ASP.NET Web Forms acoplava a interface de usuário com o seu code-beh
 
 Separando a lógica da aplicação a partir da interface do usuário ASP.NET MVC criar uma forma de realizar testes mais facilmente de forma a isolar os componentes individualmente. Classes Controllers podem ser testadas sem testar a sua atual interface do usuário. AO contrário do Web Forms, MVC Controllers não tem dependência direta com a classe HttpContext, cuja qual era o problema ao tentar realizar testes no code-behind do Web Forms.
 
+### One ASP.NET
+
+### Aplication Templates
+1. Empty
+2. Web Forms
+3. MVC
+4. Web Api
+5. Single Page Applications
+6. Facebook
+7. Azure Mobile Service
+
+#### Testing
+
+### Authentication Types
+1. No Aunthentication
+2. Individual User Accounts
+3. Organizational Accounts
+4. Windows Authentication
+
+### Estrutura do projeto MVC
 
 ### Based conventions over configurations
