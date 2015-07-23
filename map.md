@@ -50,11 +50,10 @@
       - Logging e tracing
         - Log4net
         - Elmah
-      - Fluent Api
-        - Segurança
-          - Fluent Security
-        - Validações
-          - FluentValidation
+      - Segurança
+        - Fluent Security
+      - Validações
+        - FluentValidation
       - Flurl
       - Acesso a dados
         - ORMs
@@ -70,10 +69,4 @@
       - Cache
         - Redis
         - MainCache
-      - Front-end
-        - Bootstrap
-        - Frameworks javascripts
-          - Angular JS
-          - Ember JS
-          - Knockout JS
   - Futuro: ASP.NET 5
