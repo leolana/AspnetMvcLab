@@ -7,33 +7,73 @@
     - Web
       - Client Server
       - Get vs Post
-    - Estrutura
+    - Estrutura do Projeto
       - Organização de Diretórios
       - Web Config
       - Global.asax
       - Nuget Packages
     - Scaffold
     - Views
-      - Shared e _Layout
-      - Razor
+      - Shared e _Layout 
+      - Partial Views
+      - Views Engines
+        - Razor
+          - Html Helpers
+        - Outras View Engines
       - Views Tipadas
     - Controllers
       - Armazenamento Web
         - Session
+        - Application
+        - Cache
         - TempData
-        - ViewBag
+        - ViewData e ViewBag
     - Models
       - Validação
-        - Remote
+        - Data Annotations
+          - Remote
+        - Validações customizadas
+        - Over Posting
     - Routing
   - Avançado
     - Filters
-    - Bundles
+    - Bundles e mignification
     - Autenticação e autorização
   - Exemplo Prático?
 - Conclusão
   - Melhores práticas e Ferramentas
-    - Adicionar o import default no Web.Config
-    - Que é possível pré-compilar as Views para warm-up mais rápido: http://stackoverflow.com/questions/383192/compile-views-in-asp-net-mvc
-    - FluentValidation
+    - Melhores práticas
+      - Adicionar o import default no Web.Config
+      - Que é possível pré-compilar as Views para warm-up mais rápido: http://stackoverflow.com/questions/383192/compile-views-in-asp-net-mvc
+      - Output Caching
+    - Ferramentas
+      - Logging e tracing
+        - Log4net
+        - Elmah
+      - Fluent Api
+        - Segurança
+          - Fluent Security
+        - Validações
+          - FluentValidation
+      - Flurl
+      - Acesso a dados
+        - ORMs
+          - Entity Framework
+          - NHibernate
+        - Micro ORMs
+          - Dapper
+          - PetaPoco
+          - OrmLite
+      - Automapper
+      - Background jobs
+        - Hangfire
+      - Cache
+        - Redis
+        - MainCache
+      - Front-end
+        - Bootstrap
+        - Frameworks javascripts
+          - Angular JS
+          - Ember JS
+          - Knockout JS
   - Futuro: ASP.NET 5
