@@ -1,12 +1,11 @@
 - Introdução
+  - Web (Renan)
+    - Client Server
   - O Padrão MVC (Leo)
   - ASP.NET MVC (Renan)
     - Component vs Request Framework
 - Principal
   - Basico
-    - Web (Renan)
-      - Client Server
-      - Get vs Post
     - Estrutura do Projeto (Renan)
       - Organização de Diretórios
       - Web Config
@@ -22,21 +21,45 @@
         - Outras View Engines
       - Views Tipadas
     - Controllers (Leo)
+	  - Actions
+		- Get vs Post
+	    - Tipos de Retorno
+		- Passagens de Parametros
+		  - Normal
+		  - MVC Model Binding
       - Armazenamento Web (Renan)
         - Session
         - Application
         - Cache
         - TempData
         - ViewData e ViewBag
-    - Models (Renan)
-      - Validação
-        - Data Annotations
-          - Remote
+    - Models 
+	  - View Models (Leo)
+	  - Atributos Data types (Leo)
+        - CreditCard
+        - Currency
+        - EmailAddress
+        - Password
+        - Url
+      - Formatação com Data annotations (Leo)
+        - Display
+        - DisplayFormat
+        - ScaffoldColumn
+        - ReadOnly
+      - Validação (Renan)
+        - Required
+        - StringLength
+        - RegularExpression
+        - Range
+        - Compare
+        - Remote
+        - Você pode criar a sua própria anotação customizada.
+        - Remote
         - Validações customizadas
     - Routing (Renan)
   - Avançado
+    - Bundles e Minification (Renan)
     - Filters (Leo)
-    - Bundles e Minification (Leo)
     - Autenticação e Autorização (Leo)
   - Exemplo Prático?
 - Conclusão
@@ -69,4 +92,4 @@
       - Cache
         - Redis
         - MainCache
-  - Futuro: ASP.NET 5
+  - Futuro: ASP.NET 5 (Leo)
