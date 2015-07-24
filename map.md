@@ -1,19 +1,19 @@
 - Introdução
-  - O Padrão MVC
-  - ASP.NET MVC
+  - O Padrão MVC (Leo)
+  - ASP.NET MVC (Renan)
     - Component vs Request Framework
 - Principal
   - Basico
-    - Web
+    - Web (Renan)
       - Client Server
       - Get vs Post
-    - Estrutura do Projeto
+    - Estrutura do Projeto (Renan)
       - Organização de Diretórios
       - Web Config
       - Global.asax
       - Nuget Packages
-    - Scaffold
-    - Views
+    - Scaffold (Leo)
+    - Views (Leo)
       - Shared e _Layout 
       - Partial Views
       - Views Engines
@@ -21,24 +21,23 @@
           - Html Helpers
         - Outras View Engines
       - Views Tipadas
-    - Controllers
-      - Armazenamento Web
+    - Controllers (Leo)
+      - Armazenamento Web (Renan)
         - Session
         - Application
         - Cache
         - TempData
         - ViewData e ViewBag
-    - Models
+    - Models (Renan)
       - Validação
         - Data Annotations
           - Remote
         - Validações customizadas
-        - Over Posting
-    - Routing
+    - Routing (Renan)
   - Avançado
-    - Filters
-    - Bundles e mignification
-    - Autenticação e autorização
+    - Filters (Leo)
+    - Bundles e Minification (Leo)
+    - Autenticação e Autorização (Leo)
   - Exemplo Prático?
 - Conclusão
   - Melhores práticas e Ferramentas
@@ -46,6 +45,7 @@
       - Adicionar o import default no Web.Config
       - Que é possível pré-compilar as Views para warm-up mais rápido: http://stackoverflow.com/questions/383192/compile-views-in-asp-net-mvc
       - Output Caching
+	  - Over Posting
     - Ferramentas
       - Logging e tracing
         - Log4net
