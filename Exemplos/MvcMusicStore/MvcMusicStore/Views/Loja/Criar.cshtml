@@ -1,0 +1,49 @@
+﻿@model MvcMusicStore.Models.AlbumViewModel
+
+@{
+    ViewBag.Title = "Criar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Inclusão de Álbum</h1>
+
+@using (Html.BeginForm("Criar", "Loja", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <hr/>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Titulo, "Título", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Titulo, new { htmlAttributes = new {@class = "form-control"}})
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.ArtistaId, "Artista", htmlAttributes: new {@class = "control-label col-md-2"})
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.ArtistaId, Model.Artistas, htmlAttributes: new {@class = "form-control"})
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.GeneroIds, "Gêneros", htmlAttributes: new {@class = "control-label col-md-2"})
+        <div class="col-md-10">
+            @Html.ListBoxFor(model => model.GeneroIds, Model.Generos, htmlAttributes: new {@class = "form-control"})
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.AlbumArtUrl, htmlAttributes: new {@class = "control-label col-md-2"})
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.AlbumArtUrl)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Dias da semana", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EnumDropDownListFor(model => model.DiaSemana, htmlAttributes: new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </div>
+}

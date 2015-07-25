@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore", "MvcMusicStore\MvcMusicStore.csproj", "{BE7DF6A2-D957-4515-8FD3-0D3ADD353B9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.Tests", "MvcMusicStore.Tests\MvcMusicStore.Tests.csproj", "{8CDDACAD-2640-47CD-B945-F61F13BA8D9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EDCD1C37-7BE4-4F63-883F-5A67333342DA}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE7DF6A2-D957-4515-8FD3-0D3ADD353B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7DF6A2-D957-4515-8FD3-0D3ADD353B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7DF6A2-D957-4515-8FD3-0D3ADD353B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7DF6A2-D957-4515-8FD3-0D3ADD353B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CDDACAD-2640-47CD-B945-F61F13BA8D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CDDACAD-2640-47CD-B945-F61F13BA8D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CDDACAD-2640-47CD-B945-F61F13BA8D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CDDACAD-2640-47CD-B945-F61F13BA8D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Loja de músicas</h1>
+    <img src="@Url.Content("~/Images/home-showcase.png")" />
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Artist search</div>
+    <div class="panel-body">
+        @using (Ajax.BeginForm("BuscarArtista", "Home", new AjaxOptions
+        {
+            InsertionMode = InsertionMode.Replace,
+            HttpMethod = "GET",
+            OnFailure = "searchFailed",
+            LoadingElementId = "ajax-loader",
+            UpdateTargetId = "searchresults"
+        }))
+        {
+            <input type="text" name="q" />
+            <input type="submit" class="btn btn-default" value="search" />
+            <img id="ajax-loader" src="@Url.Content("~/Images/ajax-loader.gif")" style="display: none" />
+        }
+        <div id="searchresults"></div>
+    </div>
+</div>
+
+<ul class="row list-unstyled" id="album-list">
+    @foreach (var album in Model)
+    {
+        <li class="col-lg-2 col-md-2 col-sm-2 col-xs-4 container">
+            <a href="@Url.Action("Details", "Loja", new {id = album.Id})">
+                <img alt="@album.Titulo" src="@Url.Content(@album.AlbumArtUrl)" />
+                <h4>@album.Titulo</h4>
+            </a>
+        </li>
+    }
+</ul>
+
+<div id="ofertasDoDia">
+    @Ajax.ActionLink("Click aqui para ver a oferta especial do dia!", "Ofertas", null, new AjaxOptions
+            {
+                UpdateTargetId = "ofertasDoDia",
+                InsertionMode = InsertionMode.Replace,
+                HttpMethod = "GET"
+            },
+            new { @class = "btn btn-primary" })
+</div>
+
+@section Scripts {
+    <script src="~/Scripts/App/MusicScripts.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}
