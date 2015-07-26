@@ -332,10 +332,10 @@
     <Content Include="Views\Loja\Details.cshtml" />
     <Content Include="Views\Home\_BuscarArtistaPartialView.cshtml" />
     <Content Include="Views\Home\_OfertasPartialView.cshtml" />
+    <Content Include="Views\CarrinhoCompras\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\CarrinhoCompras\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

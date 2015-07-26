@@ -20,9 +20,10 @@
           - Html Helpers
         - Outras View Engines
       - Views Tipadas
+	  - HTML Helpers
     - Controllers (Leo)
 	  - Actions
-		- Get vs Post
+		- Get vs Post (Renan)
 	    - Tipos de Retorno
 		- Passagens de Parametros
 		  - Normal

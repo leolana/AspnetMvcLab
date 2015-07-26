@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcMusicStore.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,14 +11,18 @@ namespace MvcMusicStore.Controllers
     {
         public ActionResult Index()
         {
-            //Recupera os items e insere para a viewModel
-            return View();
+            var album = TempData["album"];
+
+            return View(album);
         }
 
         public ActionResult Adicionar(int id)
         {
+            var dados = new MeusDados();
+            var album = dados.Albuns.First();
 
-            //TODO: Obtem o album e adiciona no carrinho
+            TempData["album"] = album;
+
             return RedirectToAction("Index");
         }
 

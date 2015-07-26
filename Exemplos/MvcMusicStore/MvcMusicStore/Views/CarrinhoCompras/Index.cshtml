@@ -1,0 +1,22 @@
+﻿@model MvcMusicStore.Models.Album
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Carrinho de compras</h2>
+
+<div id="album-details">
+    <p>
+        <em>Genre:</em>
+        @Model.Genero.Nome
+    </p>
+    <p>
+        <em>Artista:</em>
+        @Model.Artista.Nome
+    </p>
+    <p>
+        <em>Preço:</em>
+        @Html.DisplayFor(model => model.Preco)
+    </p>
+</div>
